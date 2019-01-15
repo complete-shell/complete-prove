@@ -52,8 +52,4 @@ O    --rc=rcfile =str    .."Process options from rcfile"
 O    --rules     =str    .."Rules for parallel vs sequential processing."
 
 # XXX Until we support +test-file-or-dir...
-A +file
-A +file
-A +file
-A +file
-A +file
+A +file...
