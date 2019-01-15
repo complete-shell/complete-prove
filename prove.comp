@@ -1,0 +1,59 @@
+CompleteShell v0.2
+
+N prove
+
+O -v --verbose      .."Print all test lines"
+O -l --lib          .."Add 'lib' to the path for your tests (-Ilib)"
+O -b --blib         .."Add 'blib/lib' and 'blib/arch' to the path"
+O -s --shuffle      .."Run the tests in random order"
+O -c --color        .."Colored test output (default)"
+O    --nocolor      .."Do not color test output"
+O    --count        .."Show the X/Y test count when not verbose (default)"
+O    --nocount      .."Disable the X/Y test count"
+O -D --dry          .."Dry run. Show test that would have run"
+O -f --failures     .."Show failed tests"
+O -o --comments     .."Show comments"
+O    --ignore-exit  .."Ignore exit status from test scripts"
+O -m --merge        .."Merge test scripts' STDERR with their STDOUT"
+O -r --recurse      .."Recursively descend into directories"
+O    --reverse      .."Run the tests in reverse order"
+O -q --quiet        .."Suppress some test output while running tests"
+O -Q --QUIET        .."Only print summary results"
+O -p --parse        .."Show full list of TAP parse errors, if any"
+O    --directives   .."Only show results with TODO or SKIP directives"
+O    --timer        .."Print elapsed time after each test"
+O    --trap         .."Trap Ctrl-C and print summary on interrupt"
+O    --normalize    .."Normalize TAP output in verbose output"
+O -T                .."Enable tainting checks"
+O -t                .."Enable tainting warnings"
+O -W                .."Enable fatal warnings"
+O -w                .."Enable warnings"
+O -h --help         .."Display this help"
+O -?                .."Display this help"
+O -V --version      .."Display the version"
+O -H --man          .."Longer manpage for prove"
+O    --norc         .."Don't process default .proverc"
+
+# Options that take arguments:
+
+O -I             =str    .."Library paths to include."
+O -P             =str    .."Load plugin (searches App::Prove::Plugin::*.)"
+O -M             =str    .."Load a module."
+O -e --exec      =str    .."Interpreter to run the tests ('' for compiled tests.)"
+O    --ext       =str    .."Set the extension for tests (default '.t')"
+O    --harness   =str    .."Define test harness to use.  See TAP::Harness."
+O    --formatter =str    .."Result formatter to use. See FORMATTERS."
+O    --source    =str    .."Load and/or configure a SourceHandler."
+O -a --archive   =str    .."Store the resulting TAP in an archive file."
+O -j --jobs      =str    .."Run N test jobs in parallel (try 9.)"
+O    --state     =opts   .."Control prove's persistent state."
+O    --statefile =file   .."Use 'file' instead of '.prove' for state"
+O    --rc=rcfile =str    .."Process options from rcfile"
+O    --rules     =str    .."Rules for parallel vs sequential processing."
+
+# XXX Until we support +test-file-or-dir...
+A +file
+A +file
+A +file
+A +file
+A +file
