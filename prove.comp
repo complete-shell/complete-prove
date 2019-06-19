@@ -1,6 +1,6 @@
 CompleteShell v0.2
 
-N prove
+N prove v0.0.1      ..'Run tests through a TAP harness'
 
 O -v --verbose      .."Print all test lines"
 O -l --lib          .."Add 'lib' to the path for your tests (-Ilib)"
